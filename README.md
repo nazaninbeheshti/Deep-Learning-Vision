@@ -1,2 +1,1 @@
-# Machine_Learning_algorithms
-# Machine_Learning_algorithms
+Implementing Machine Learning Algorithsm from scratch
