@@ -21,13 +21,13 @@ class KNN():
         return np.array(predicted_label)
 
     def _predict(self,x):
-        #compute the distances
+        # Compute the distances between sample x and all examples in the training set
         distances = [Euclidean_distance(x, x_train) for x_train in self.X_train]
-        #get K nearest samples and their corresponding labels
+        # Sort by distance and get and return the indices of the first K neighbors
         k_indices = np.argsort(distances )[0:self.k]
-        #get lables
+        # Extract the labels of the first K neighbor
         K_nearest_labels = [self.Y_train[i] for i in k_indices]
-        #most common labels
+        # Return the most common sample
         most_common = Counter(K_nearest_labels).most_common(1)
         return most_common[0][0]
 
