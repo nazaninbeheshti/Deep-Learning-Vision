@@ -1,1 +1,1 @@
-Implementing Machine Learning Algorithsm from scratch
+Implementing Machine Learning Algorithms from scratch
